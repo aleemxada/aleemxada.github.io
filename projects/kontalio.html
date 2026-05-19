@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="All-in-one multi-tenant SMB platform — HR, inventory, e-commerce, and AI documents — Case study by Aleem Zada.">
+  <title>Kontalio — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Kontalio</span>
+        </nav>
+        <span class="tag domain-b2b">B2B SaaS</span>
+        <h1>Kontalio</h1>
+        <p class="cs-tagline">All-in-one multi-tenant SMB platform — HR, inventory, e-commerce, and AI documents</p>
+        
+        <div class="cs-stack"><span class="tag domain-b2b">Laravel 8</span><span class="tag domain-b2b">PHP 8</span><span class="tag domain-b2b">MySQL</span><span class="tag domain-b2b">OpenAI GPT-4.1</span><span class="tag domain-b2b">Stripe</span><span class="tag domain-b2b">Laravel Sanctum</span><span class="tag domain-b2b">REST API</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Kontalio consolidates HR/attendance, invoicing, multi-warehouse inventory, e-commerce, and AI document intelligence into one multi-tenant SMB SaaS spanning 25+ admin modules—replacing disconnected tools with a unified operations hub.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>SMBs needed granular permissions across many modules, a reliable quote-to-invoice pipeline, and a mobile app fed by a secure API—all without duplicating business logic.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>GPT-4.1 Vision invoice OCR returns structured JSON for instant form auto-fill. A 5-role RBAC matrix grants per-module CRUD permissions. Quotation → Proforma → Invoice flows preserve line-item integrity. A Sanctum-powered REST API (34+ endpoints) powers the companion mobile app for auth, planning, attendance, check-in/out, and timetables.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>25+ admin modules (HR, inventory, e-commerce, finance)</li><li>GPT-4.1 Vision invoice OCR with JSON auto-fill</li><li>5-role RBAC with per-module CRUD matrix</li><li>Quotation → Proforma → Invoice pipeline</li><li>34+ Sanctum API endpoints for mobile companion app</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Permission matrix</h4><p>JSON-driven module permissions evaluated in middleware and policies.</p></div><div class="cs-tech-item"><h4>Service layer</h4><p>Shared business rules between web admin and mobile API controllers.</p></div><div class="cs-tech-item"><h4>Document AI</h4><p>PDF/image upload → Vision extraction → validated DTO → Eloquent persistence.</p></div><div class="cs-tech-item"><h4>Multi-warehouse</h4><p>Stock transfers, reservations, and order allocation across locations.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Unified SMB operations in one auditable platform with mobile workforce support.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack Laravel developer — module architecture, AI OCR, RBAC design, mobile REST API.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 8</li><li>PHP 8</li><li>MySQL</li><li>OpenAI GPT-4.1</li><li>Stripe</li><li>Laravel Sanctum</li><li>REST API</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="storatax.html" class="btn cs-nav-btn">← StoraTax</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="limiria.html" class="btn cs-nav-btn">Limiria Distri →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

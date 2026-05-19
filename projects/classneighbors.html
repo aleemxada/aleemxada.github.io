@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="K-12 EdTech SaaS — peer nomination, AI classroom insights, and district-wide reporting — Case study by Aleem Zada.">
+  <title>ClassNeighbors — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>ClassNeighbors</span>
+        </nav>
+        <span class="tag domain-edtech">EdTech</span>
+        <h1>ClassNeighbors</h1>
+        <p class="cs-tagline">K-12 EdTech SaaS — peer nomination, AI classroom insights, and district-wide reporting</p>
+        
+        <div class="cs-stack"><span class="tag domain-edtech">Laravel 10</span><span class="tag domain-edtech">PHP 8.1</span><span class="tag domain-edtech">MySQL</span><span class="tag domain-edtech">OpenAI GPT-4o</span><span class="tag domain-edtech">Stripe</span><span class="tag domain-edtech">Clever</span><span class="tag domain-edtech">ClassLink OneRoster</span><span class="tag domain-edtech">Google Classroom</span><span class="tag domain-edtech">AWS S3</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>ClassNeighbors is a multi-tenant K-12 SaaS platform that enables anonymous student peer-nomination voting, AI-powered classroom social analysis, and school-wide reporting for individual teachers, schools, and entire districts. The system replaces ad-hoc spreadsheets and manual observation with auditable, role-scoped workflows built for educators and administrators.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Districts needed automated roster provisioning from existing SIS tools, tiered billing across teacher/school/district levels, and AI insights that respect FERPA-style data boundaries—without re-processing entire datasets on every student submission.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>A Laravel service-layer architecture with Clever OAuth and ClassLink OneRoster v1.1 delta-sync provisions organizations, teachers, classes, and students with full audit logs. A custom RAG pipeline (chunking → text-embedding-3-small → vector store → GPT-4o Assistants API) powers stateful classroom conversations. Stripe Cashier handles tiered subscriptions; Google Classroom import and DomPDF/PhpSpreadsheet reporting round out the educator toolkit.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Anonymous peer-nomination voting with school and district roll-ups</li><li>Clever OAuth + ClassLink OneRoster v1.1 automated roster delta-sync</li><li>RAG pipeline with OpenAI embeddings and GPT-4o Assistants API</li><li>Stripe tiered subscriptions (teacher / school / district)</li><li>Google Classroom import and multi-format PDF/Excel reports</li><li>5-role RBAC with tenant isolation</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Roster sync</h4><p>Full delta-sync of orgs, teachers, classes, students with audit trail and error recovery.</p></div><div class="cs-tech-item"><h4>AI pipeline</h4><p>Document chunking, embedding-3-small vector store, multi-turn GPT-4o conversations.</p></div><div class="cs-tech-item"><h4>Multi-tenancy</h4><p>Scoped data access per teacher, school, and district with service-layer authorization.</p></div><div class="cs-tech-item"><h4>Billing</h4><p>Laravel Cashier subscription tiers, webhooks, and plan-gated feature flags.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Delivered a production EdTech platform that scales from single classrooms to district deployments with automated provisioning and AI-driven insights.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Senior full-stack Laravel developer — system architecture, roster integrations, RAG pipeline, Stripe billing, and reporting modules.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 10</li><li>PHP 8.1</li><li>MySQL</li><li>OpenAI GPT-4o</li><li>Stripe</li><li>Clever</li><li>ClassLink OneRoster</li><li>Google Classroom</li><li>AWS S3</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <span></span>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="classpeers.html" class="btn cs-nav-btn">ClassPeers →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

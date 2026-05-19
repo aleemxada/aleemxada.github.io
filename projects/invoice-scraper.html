@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="AI invoice capture SaaS + Chrome MV3 extension — email and web pipelines — Case study by Aleem Zada.">
+  <title>Invoice Scraper — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Invoice Scraper</span>
+        </nav>
+        <span class="tag domain-fintech">FinTech / AI</span>
+        <h1>Invoice Scraper</h1>
+        <p class="cs-tagline">AI invoice capture SaaS + Chrome MV3 extension — email and web pipelines</p>
+        
+        <div class="cs-stack"><span class="tag domain-fintech">Laravel 11</span><span class="tag domain-fintech">PHP 8.3</span><span class="tag domain-fintech">MySQL</span><span class="tag domain-fintech">GPT-4o</span><span class="tag domain-fintech">Chrome MV3</span><span class="tag domain-fintech">Sanctum</span><span class="tag domain-fintech">Google/Microsoft OAuth</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Invoice Scraper captures invoices from IMAP/OAuth email inboxes and from any website via a Chrome Manifest V3 extension—both pipelines converge on a shared GPT-4o extraction API for consistent structured output.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Duplicate invoices from email forwards and re-scraped pages needed reliable deduplication. Extraction had to work across 15+ languages with 25+ fields per document.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>GPT-4o Vision and text modes return 25+ structured fields. Two-layer deduplication: SHA-256 content hash plus semantic invoice_number/vendor matching. Cascade lifecycle cleanup keeps email, extension, and SaaS records in sync. Google and Microsoft OAuth for inbox access.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>IMAP/OAuth email inbox ingestion</li><li>Chrome MV3 extension for any-website capture</li><li>Shared GPT-4o extraction API (Vision + text)</li><li>25+ fields, 15+ languages</li><li>SHA-256 + semantic deduplication</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Extension ↔ API</h4><p>Sanctum tokens, CORS-safe upload, and shared extraction endpoint.</p></div><div class="cs-tech-item"><h4>Deduplication</h4><p>Content hash first, then fuzzy match on vendor + invoice number.</p></div><div class="cs-tech-item"><h4>OAuth inboxes</h4><p>Google/Microsoft token refresh and scoped mailbox polling.</p></div><div class="cs-tech-item"><h4>Lifecycle</h4><p>Cascade delete/archive across extension events and SaaS records.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Unified multilingual invoice intake from email and web with production-grade deduplication.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack developer — extraction API, Chrome extension integration, deduplication, OAuth mail pipelines.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 11</li><li>PHP 8.3</li><li>MySQL</li><li>GPT-4o</li><li>Chrome MV3</li><li>Sanctum</li><li>Google/Microsoft OAuth</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="mrmechanic.html" class="btn cs-nav-btn">← MR. Mechanic</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="parade-deck.html" class="btn cs-nav-btn">Parade Deck →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

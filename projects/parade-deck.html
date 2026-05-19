@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Military veteran creator economy — events, billing, and 15+ integrations — Case study by Aleem Zada.">
+  <title>Parade Deck — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Parade Deck</span>
+        </nav>
+        <span class="tag domain-b2b">SaaS / Community</span>
+        <h1>Parade Deck</h1>
+        <p class="cs-tagline">Military veteran creator economy — events, billing, and 15+ integrations</p>
+        
+        <div class="cs-stack"><span class="tag domain-b2b">Laravel 8</span><span class="tag domain-b2b">PHP 8</span><span class="tag domain-b2b">MySQL</span><span class="tag domain-b2b">Stripe</span><span class="tag domain-b2b">PayPal</span><span class="tag domain-b2b">Twilio</span><span class="tag domain-b2b">WATI</span><span class="tag domain-b2b">Zoom</span><span class="tag domain-b2b">YouTube API</span><span class="tag domain-b2b">ID.me</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Parade Deck is a full-stack SaaS for military podcast creators—covering event lifecycle (booking → QR check-in), dual payment providers, awards voting, networking directory, and in-app messaging with veteran verification.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Creators needed one platform for events, monetization, and community—with reliable reminders across SMS, WhatsApp, email, Zoom, and YouTube without manual sync.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>Stripe Cashier and PayPal for billing. Event lifecycle with QR check-in. ID.me military verification. Integrations: Twilio SMS, WATI WhatsApp, Brevo/SendGrid, HubSpot CRM, Google Calendar, Zoom OAuth, YouTube Data API v3, TikTok OAuth. Six scheduled cron workflows, database-backed async queue, and 10 Excel export classes.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Event lifecycle: booking → reminders → QR check-in</li><li>Stripe Cashier + PayPal billing</li><li>Awards voting and networking directory</li><li>In-app messaging between creators and members</li><li>ID.me military verification</li><li>15+ third-party API integrations</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Integration hub</h4><p>Service classes per provider with token refresh and webhook handlers.</p></div><div class="cs-tech-item"><h4>Cron workflows</h4><p>Event reminders, Zoom alerts, YouTube sync, and digest emails on Scheduler.</p></div><div class="cs-tech-item"><h4>Queue system</h4><p>Database-backed jobs for SMS, email, and CRM sync with failure retries.</p></div><div class="cs-tech-item"><h4>Exports</h4><p>10 Maatwebsite Excel classes for events, members, and revenue reporting.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">All-in-one creator platform for the military podcast community with verified onboarding and automated event ops.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack Laravel developer — integrations, billing, event automation, messaging, veteran verification.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 8</li><li>PHP 8</li><li>MySQL</li><li>Stripe</li><li>PayPal</li><li>Twilio</li><li>WATI</li><li>Zoom</li><li>YouTube API</li><li>ID.me</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="invoice-scraper.html" class="btn cs-nav-btn">← Invoice Scraper</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <span></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

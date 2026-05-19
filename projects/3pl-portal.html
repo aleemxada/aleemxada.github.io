@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Multi-tenant logistics — inbound, outbound, warehouse stock, and idempotent billing — Case study by Aleem Zada.">
+  <title>3PL Customer Portal — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>3PL Customer Portal</span>
+        </nav>
+        <span class="tag domain-logistics">Logistics</span>
+        <h1>3PL Customer Portal</h1>
+        <p class="cs-tagline">Multi-tenant logistics — inbound, outbound, warehouse stock, and idempotent billing</p>
+        
+        <div class="cs-stack"><span class="tag domain-logistics">Laravel 12</span><span class="tag domain-logistics">PHP 8.2</span><span class="tag domain-logistics">MySQL</span><span class="tag domain-logistics">Stripe Checkout</span><span class="tag domain-logistics">DomPDF</span><span class="tag domain-logistics">Bootstrap 5</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>A multi-tenant logistics platform for 3PL operations: inbound receiving (local and China multi-leg shipments), single and bulk outbound fulfillment with label PDFs, and warehouse stock tracking including CBM measurements.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Billing had to be idempotent across six charge types, with invoices that flow through PDF generation, email, Stripe Checkout, webhook confirmation, and overdue cron—without duplicate charges on retries.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>An idempotent billing ledger records charges with unique keys per operation type. Full invoice lifecycle: DomPDF generation → email delivery → Stripe Checkout link → webhook marks paid → scheduled overdue processing. Multi-tenant isolation separates 3PL customers and warehouse operators.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Inbound receiving (local + China multi-leg)</li><li>Single/bulk outbound with shipping label PDFs</li><li>Warehouse stock with CBM tracking</li><li>Idempotent billing ledger (6 charge types)</li><li>Invoice → email → Stripe Checkout → webhook → overdue cron</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Idempotent ledger</h4><p>Unique idempotency keys per charge; safe retries on queue failures.</p></div><div class="cs-tech-item"><h4>Fulfillment</h4><p>Bulk outbound batching with label generation and tracking numbers.</p></div><div class="cs-tech-item"><h4>Stripe lifecycle</h4><p>Checkout sessions, webhooks, and reconciliation against ledger entries.</p></div><div class="cs-tech-item"><h4>Multi-tenancy</h4><p>Tenant-scoped warehouses, customers, and billing accounts.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Replaced spreadsheet-based 3PL billing with auditable, idempotent charge tracking and automated collections.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Senior Laravel developer — billing ledger, fulfillment workflows, Stripe integration, multi-tenant architecture.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 12</li><li>PHP 8.2</li><li>MySQL</li><li>Stripe Checkout</li><li>DomPDF</li><li>Bootstrap 5</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="sparetrac.html" class="btn cs-nav-btn">← Sparetrac</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="usst.html" class="btn cs-nav-btn">USST Verification Platform →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

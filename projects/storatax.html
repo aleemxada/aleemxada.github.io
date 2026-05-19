@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Bilingual AI tax management SaaS for Canadian filers, gig workers, and accountants — Case study by Aleem Zada.">
+  <title>StoraTax — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>StoraTax</span>
+        </nav>
+        <span class="tag domain-fintech">FinTech</span>
+        <h1>StoraTax</h1>
+        <p class="cs-tagline">Bilingual AI tax management SaaS for Canadian filers, gig workers, and accountants</p>
+        
+        <div class="cs-stack"><span class="tag domain-fintech">Laravel 10</span><span class="tag domain-fintech">PHP 8</span><span class="tag domain-fintech">MySQL</span><span class="tag domain-fintech">OpenAI GPT-4.1</span><span class="tag domain-fintech">Stripe</span><span class="tag domain-fintech">Apple IAP</span><span class="tag domain-fintech">AWS S3</span><span class="tag domain-fintech">QuickBooks Online</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>StoraTax is a bilingual (EN/FR) multi-tenant SaaS for Canadian tax workflows—serving individual filers, Uber/Lyft gig workers (Quebec GST/QST), and accountants managing multiple client portfolios from a single dashboard.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Receipt capture had to work across photos, PDFs, and mobile—with accurate Canadian tax breakdowns (GST/HST/PST/QST). Payments needed to route correctly on iOS (Apple IAP) vs web (Stripe) while staying CRA-compliant.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>End-to-end AI OCR: uploads → GPT-4.1 Vision extracts merchant, totals, and tax lines → structured JSON auto-populates forms, with Tesseract as fallback. Platform-aware payment routing sends iOS users to Apple IAP and web users to Stripe Checkout in USD/CAD. Automated PDF/Excel reports cover T776, T1, and Quebec GST/QST requirements.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Bilingual EN/FR UI and document generation</li><li>GPT-4.1 Vision receipt OCR with Tesseract fallback</li><li>Apple IAP (iOS) and Stripe Checkout (web)</li><li>Multi-currency USD/CAD support</li><li>CRA-compliant T776, T1, and Quebec GST/QST exports</li><li>Accountant multi-client portfolio management</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>AI OCR pipeline</h4><p>Vision API → validated JSON schema → form auto-fill with human review hooks.</p></div><div class="cs-tech-item"><h4>Payment routing</h4><p>User-agent and platform detection for IAP vs Stripe with shared entitlement layer.</p></div><div class="cs-tech-item"><h4>Tax engine</h4><p>Province-aware GST/HST/PST/QST calculation and report templates.</p></div><div class="cs-tech-item"><h4>QuickBooks</h4><p>Online integration for accountant workflow sync.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Digitized receipt-to-form workflows for Canadian compliance, reducing manual data entry for filers and accounting firms.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Lead architect — AI OCR pipeline, bilingual UX, platform billing, CRA report generation, QuickBooks integration.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 10</li><li>PHP 8</li><li>MySQL</li><li>OpenAI GPT-4.1</li><li>Stripe</li><li>Apple IAP</li><li>AWS S3</li><li>QuickBooks Online</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="classpeers.html" class="btn cs-nav-btn">← ClassPeers</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="kontalio.html" class="btn cs-nav-btn">Kontalio →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

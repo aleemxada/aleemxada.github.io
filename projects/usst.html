@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Industrial safety certification, QR verification, and geolocation analytics — Case study by Aleem Zada.">
+  <title>USST Verification Platform — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>USST Verification Platform</span>
+        </nav>
+        <span class="tag domain-logistics">Compliance / Industrial</span>
+        <h1>USST Verification Platform</h1>
+        <p class="cs-tagline">Industrial safety certification, QR verification, and geolocation analytics</p>
+        
+        <div class="cs-stack"><span class="tag domain-logistics">Laravel 10</span><span class="tag domain-logistics">PHP 8.1</span><span class="tag domain-logistics">MySQL</span><span class="tag domain-logistics">Google Maps API</span><span class="tag domain-logistics">Maatwebsite Excel</span><span class="tag domain-logistics">DomPDF</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Compliance platform built for US ServTech: public certificate verification via QR deep links, dynamic per-category MySQL schema management, work-order job tracking, and inspection checklist workflows for field technicians.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Different equipment categories required different data fields—static schemas would not scale. Field inspections needed GPS analytics without storing redundant points.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>Dynamic schema management creates category-specific tables/columns at runtime with migration safety. Geolocation pipeline: browser GPS → Haversine deduplication (500 m) → 100 m cluster grouping → Google Maps visualization with OSM Nominatim reverse geocoding for readable addresses.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Public certificate verification via QR deep links</li><li>Dynamic per-category MySQL schema management</li><li>Work-order tracking and inspection checklists</li><li>GPS → Haversine dedup → cluster → Maps visualization</li><li>OSM Nominatim reverse geocoding</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Dynamic schema</h4><p>Category-driven field definitions with admin UI and safe migrations.</p></div><div class="cs-tech-item"><h4>Geo pipeline</h4><p>Client GPS batches, server-side dedup and clustering before map render.</p></div><div class="cs-tech-item"><h4>QR verification</h4><p>Signed deep links to public certificate status pages.</p></div><div class="cs-tech-item"><h4>Reporting</h4><p>DomPDF certificates and Maatwebsite Excel compliance exports.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Field-verifiable certificates and map-based inspection analytics for industrial safety compliance.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack developer — dynamic schema engine, compliance workflows, geolocation analytics.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 10</li><li>PHP 8.1</li><li>MySQL</li><li>Google Maps API</li><li>Maatwebsite Excel</li><li>DomPDF</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="3pl-portal.html" class="btn cs-nav-btn">← 3PL Customer Portal</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="dpms.html" class="btn cs-nav-btn">Design Production Management System →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

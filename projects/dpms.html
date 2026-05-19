@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="Multi-portal design ops — workflows, credits, FCFS marketplace, designer payroll — Case study by Aleem Zada.">
+  <title>Design Production Management System — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Design Production Management System</span>
+        </nav>
+        <span class="tag domain-b2b">Operations / HR</span>
+        <h1>Design Production Management System</h1>
+        <p class="cs-tagline">Multi-portal design ops — workflows, credits, FCFS marketplace, designer payroll</p>
+        
+        <div class="cs-stack"><span class="tag domain-b2b">Laravel 12</span><span class="tag domain-b2b">PHP 8.2</span><span class="tag domain-b2b">MySQL</span><span class="tag domain-b2b">Blade</span><span class="tag domain-b2b">Bootstrap 5</span><span class="tag domain-b2b">Spatie RBAC</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>DPMS is a multi-portal design production platform managing the full lifecycle from client requests through designer assignment, revisions, credits, and automated payroll in PKR.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Urgent jobs needed fair first-come-first-served assignment without double-booking designers. Credits, revision overages, and monthly payroll had to stay atomic under concurrent load.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>12-state request workflow with two-stage Complete Listings pipeline and workload-based auto-assignment. Urgent FCFS marketplace uses database row locking. Centralized credit engine applies priority multipliers with atomic ledger entries. Designer payroll runs on schedule: credit-payout, tiered KPI bonuses, monthly generation via Laravel Scheduler.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>12-state request workflow + two-stage Complete Listings</li><li>Workload-based auto-assignment</li><li>Urgent FCFS marketplace with DB row locking</li><li>Credit engine (priority multipliers, atomic ledger, revision overages)</li><li>Designer payroll automation (PKR, KPI bonuses, monthly cron)</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Workflow engine</h4><p>State machine with guards, transitions, and audit log per request.</p></div><div class="cs-tech-item"><h4>Row locking</h4><p>SELECT FOR UPDATE on marketplace picks to prevent double assignment.</p></div><div class="cs-tech-item"><h4>Credit ledger</h4><p>Atomic debit/credit with revision overage rules and priority multipliers.</p></div><div class="cs-tech-item"><h4>Spatie RBAC</h4><p>Roles and permissions across client, designer, and admin portals.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Automated design-ops assignment and payroll replaced manual coordination spreadsheets.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Senior Laravel developer — workflow engine, credit ledger, marketplace locking, payroll automation.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 12</li><li>PHP 8.2</li><li>MySQL</li><li>Blade</li><li>Bootstrap 5</li><li>Spatie RBAC</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="usst.html" class="btn cs-nav-btn">← USST Verification Platform</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="mrmechanic.html" class="btn cs-nav-btn">MR. Mechanic →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

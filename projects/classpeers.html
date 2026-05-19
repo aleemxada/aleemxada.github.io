@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="AI-powered classroom insights with Vue.js islands and automated behavioral reports — Case study by Aleem Zada.">
+  <title>ClassPeers — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>ClassPeers</span>
+        </nav>
+        <span class="tag domain-edtech">EdTech</span>
+        <h1>ClassPeers</h1>
+        <p class="cs-tagline">AI-powered classroom insights with Vue.js islands and automated behavioral reports</p>
+        
+        <div class="cs-stack"><span class="tag domain-edtech">Laravel 10</span><span class="tag domain-edtech">Vue.js</span><span class="tag domain-edtech">MySQL</span><span class="tag domain-edtech">OpenAI GPT-4o</span><span class="tag domain-edtech">Stripe</span><span class="tag domain-edtech">ClassLink OneRoster</span><span class="tag domain-edtech">AWS S3</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>ClassPeers is a parallel K-12 EdTech SaaS focused on AI-powered classroom insights. Vue.js component islands deliver interactive dashboards while Laravel handles roster sync, billing, and queued report generation at scale.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Generating embeddings for entire schools on every nomination was cost-prohibitive and slow. The platform also needed six distinct report types delivered reliably via email without blocking web requests.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>Built EmbeddingMeta—an incremental sync layer that pushes only changed class/student data to OpenAI vector stores. Six automated report types (seating preference, behavioral nominations, cross-class comparisons, and more) dispatch through queued jobs. ClassLink OneRoster v1.1 full tenant-to-student sync spans 95+ migrations with Clever OAuth and Stripe plans including coupons and trials.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>Vue.js component islands for interactive classroom dashboards</li><li>6 automated report types via queued email jobs</li><li>EmbeddingMeta incremental AI sync (changed records only)</li><li>ClassLink OneRoster v1.1 + Clever OAuth</li><li>Stripe billing with tiers, coupons, and trial periods</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>EmbeddingMeta</h4><p>Diff-based sync to vector stores—avoids redundant OpenAI calls per submission.</p></div><div class="cs-tech-item"><h4>Queue architecture</h4><p>Report generation, email dispatch, and roster jobs on Laravel queues.</p></div><div class="cs-tech-item"><h4>Frontend islands</h4><p>Vue components embedded in Blade for progressive enhancement.</p></div><div class="cs-tech-item"><h4>Schema evolution</h4><p>95+ migrations supporting full roster hierarchy and sync states.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Cut AI API costs significantly while delivering rich behavioral analytics and seating insights to educators automatically.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack developer — Vue islands, AI embedding optimization, ClassLink/Clever integrations, Stripe billing.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 10</li><li>Vue.js</li><li>MySQL</li><li>OpenAI GPT-4o</li><li>Stripe</li><li>ClassLink OneRoster</li><li>AWS S3</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="classneighbors.html" class="btn cs-nav-btn">← ClassNeighbors</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="storatax.html" class="btn cs-nav-btn">StoraTax →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

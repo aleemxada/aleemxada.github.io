@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="B2B industrial spare parts — BOM-driven dynamic pricing in production — Case study by Aleem Zada.">
+  <title>Sparetrac — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Sparetrac</span>
+        </nav>
+        <span class="tag domain-b2b">B2B / Manufacturing</span>
+        <h1>Sparetrac</h1>
+        <p class="cs-tagline">B2B industrial spare parts — BOM-driven dynamic pricing in production</p>
+        <p class="cs-production"><i class="fas fa-link"></i> Production: <a href="https://order.sparetrac.com" target="_blank" rel="noopener">https://order.sparetrac.com</a></p>
+        <div class="cs-stack"><span class="tag domain-b2b">Laravel 9</span><span class="tag domain-b2b">PHP 8</span><span class="tag domain-b2b">MySQL</span><span class="tag domain-b2b">Blade</span><span class="tag domain-b2b">jQuery</span><span class="tag domain-b2b">DomPDF</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Sparetrac is a dual-portal B2B platform for industrial spare parts ordering. Raw-material price updates in INR/USD cascade through linked BOMs to catalog prices and customer carts in real time—eliminating manual repricing for procurement teams.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Complex BOM hierarchies, multi-currency raw materials, and fine-grained staff permissions across 30+ modules required a pricing engine that stayed consistent from admin updates to customer checkout.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>BOM-driven dynamic pricing recalculates catalog and cart line items when material costs change. Three-tier staff RBAC (Admin/Contributor/Viewer) uses 20+ JSON feature-key permissions. managed_by and contact_visibilities scope records across modules. Eight Excel/DomPDF export classes support operations reporting.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>BOM-driven dynamic pricing (INR/USD raw materials → catalog → cart)</li><li>Dual-portal B2B (staff admin + customer ordering)</li><li>3-tier RBAC with 20+ JSON feature-key permissions</li><li>managed_by + contact_visibilities scoping (30+ modules)</li><li>8 Excel/DomPDF export classes</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Pricing cascade</h4><p>Observer-driven recalculation through BOM trees to active carts.</p></div><div class="cs-tech-item"><h4>Permission keys</h4><p>Feature flags stored as JSON, evaluated in middleware per route/action.</p></div><div class="cs-tech-item"><h4>Data scoping</h4><p>managed_by and visibility pivots limit CRM and order data per user.</p></div><div class="cs-tech-item"><h4>Exports</h4><p>Maatwebsite and DomPDF classes for orders, BOMs, and inventory reports.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Live BOM-linked pricing on order.sparetrac.com—production system for industrial B2B buyers.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Full-stack developer — pricing engine, RBAC matrix, export pipelines, dual-portal UX.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 9</li><li>PHP 8</li><li>MySQL</li><li>Blade</li><li>jQuery</li><li>DomPDF</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="limiria.html" class="btn cs-nav-btn">← Limiria Distri</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="3pl-portal.html" class="btn cs-nav-btn">3PL Customer Portal →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

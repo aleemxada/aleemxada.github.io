@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="description" content="B2B/B2C e-commerce and inventory for a French specialty food distributor — Case study by Aleem Zada.">
+  <title>Limiria Distri — Case Study | Aleem Zada</title>
+  <link rel="stylesheet" href="../css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/developer-portfolio.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <div class="container container-wide">
+      <a href="../index.html" class="logo"><img class="logo-img" src="../img/aleem.png" alt="" width="32" height="32"><span>aleemxada</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../files/Aleem_Zada_Resume.docx" class="btn btn-primary" download><i class="fas fa-download"></i> Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Portfolio</a>
+          <span>/</span>
+          <a href="../index.html#projects">Projects</a>
+          <span>/</span>
+          <span>Limiria Distri</span>
+        </nav>
+        <span class="tag domain-ecommerce">E-Commerce</span>
+        <h1>Limiria Distri</h1>
+        <p class="cs-tagline">B2B/B2C e-commerce and inventory for a French specialty food distributor</p>
+        
+        <div class="cs-stack"><span class="tag domain-ecommerce">Laravel 11</span><span class="tag domain-ecommerce">PHP 8.2</span><span class="tag domain-ecommerce">MySQL</span><span class="tag domain-ecommerce">Stripe</span><span class="tag domain-ecommerce">AWS SES</span><span class="tag domain-ecommerce">DomPDF</span><span class="tag domain-ecommerce">Maatwebsite Excel</span></div>
+      </div>
+    </section>
+
+    <section class="cs-body">
+      <div class="container cs-layout">
+        <article class="cs-main">
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Overview</h2>
+            <p>Limiria Distri is a full commercial lifecycle platform for a French specialty distributor—covering storefront, multi-warehouse inventory, financial documents, and real-time profit analytics in one Laravel application.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> The challenge</h2>
+            <p>Concurrent orders against shared stock caused overselling. Profit had to be computed consistently across catalog, orders, and invoices. Shipping rules varied by customer country.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Solution</h2>
+            <p>A custom profit engine tracks margins across the product catalog, orders, and invoices. The SafeQuantityMutation Eloquent trait prevents race conditions on stock decrements. Country-aware IP-geolocation drives shipping rules. A 13-class notification system alerts staff and customers across order and fulfillment events.</p>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Key features</h2>
+            <ul class="cs-check-list"><li>B2B/B2C storefront with multi-warehouse inventory</li><li>Real-time profit engine across catalog, orders, invoices</li><li>SafeQuantityMutation trait for race-safe stock updates</li><li>Country-aware IP-geolocation shipping</li><li>13-class notification system</li><li>DomPDF invoices and Maatwebsite Excel exports</li></ul>
+          </div>
+
+          <div class="cs-box">
+            <h2><span class="cs-hash">#</span> Technical highlights</h2>
+            <div class="cs-tech-grid"><div class="cs-tech-item"><h4>Profit engine</h4><p>Margin rules applied at catalog, order, and invoice stages with audit trail.</p></div><div class="cs-tech-item"><h4>Concurrency</h4><p>DB-level locking and atomic quantity mutations on high-traffic SKUs.</p></div><div class="cs-tech-item"><h4>Notifications</h4><p>Event-driven notification classes for order, stock, and fulfillment states.</p></div><div class="cs-tech-item"><h4>Exports</h4><p>PDF and Excel generation for finance and operations teams.</p></div></div>
+          </div>
+
+          <div class="cs-box cs-highlight-box">
+            <h2><span class="cs-hash">#</span> Impact</h2>
+            <p class="cs-impact">Real-time profit visibility and race-safe inventory for multi-warehouse French distribution.</p>
+          </div>
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-sidebar-card">
+            <h3>My role</h3>
+            <p>Senior Laravel developer — profit engine, inventory safety, shipping logic, notification architecture.</p>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Tech stack</h3>
+            <ul class="cs-sidebar-stack"><li>Laravel 11</li><li>PHP 8.2</li><li>MySQL</li><li>Stripe</li><li>AWS SES</li><li>DomPDF</li><li>Maatwebsite Excel</li></ul>
+          </div>
+          <div class="cs-sidebar-card">
+            <h3>Links</h3>
+            <p><a href="../index.html#projects">All projects</a></p>
+            <p><a href="../files/Aleem_Zada_Resume.docx" download>Download resume</a></p>
+            <p><a href="mailto:aleemdeveloper@gmail.com">Contact Aleem</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-nav-section">
+      <div class="container cs-nav-row">
+        <a href="kontalio.html" class="btn cs-nav-btn">← Kontalio</a>
+        <a href="../index.html#projects" class="btn btn-accent">All case studies</a>
+        <a href="sparetrac.html" class="btn cs-nav-btn">Sparetrac →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Aleem Zada · <a href="../index.html">Portfolio</a></p>
+    </div>
+  </footer>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>
